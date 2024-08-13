@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
 }
+.testing{
+    position: relative;
+    width: 500px;
+    height: 80%;
+}
 
 .puzzle-piece {
     height: 250px;
@@ -43,15 +48,31 @@
 }
 
 .puzzle-circle.right {
-    top: 90px;
+    top: 100px;
     right: 5px;
     transform: rotate(90deg);
 
 }
 
 .puzzle-circle.left {
-    top: 90px;
+    top: 100px;
     left: 45px;
     transform: rotate(90deg);
     background-color: white;
+}
+
+.puzzle-piece.two{
+    transform: rotate(90deg);
+    left: 245px;
+    top: -250px;
+    animation: 4s linear infinite slide
+}
+
+@keyframes slide {
+    30% {
+        left: 195px;
+    }
+    60% {
+        left: 150px;
+    }
 }
