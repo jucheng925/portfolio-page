@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+.puzzle-piece {
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+    display: flex;
+    position: relative;
+}
+
+.puzzle-square {
+    height: 150px;
+    width: 150px;
+    border: 1px solid red;
+    margin: auto;
+    z-index: -1;
+    background-color: red
+
+}
+
+
+.puzzle-circle {
+    height: 20%;
+    width: 20%;
+    /* border: 1px solid blue; */
+    border-radius: 50% 50% 75% 75%;
+    position: absolute;
+    background-color: red;
+    z-index: 1;
+}
+
+.puzzle-circle.top {
+    top: 5px;
+    left: 100px;
+}
+
+.puzzle-circle.bottom {
+    top: 153.22px;
+    left: 100px;
+    background-color: white;
+}
+
+.puzzle-circle.right {
+    top: 90px;
+    right: 5px;
+    transform: rotate(90deg);
+
+}
+
+.puzzle-circle.left {
+    top: 90px;
+    left: 45px;
+    transform: rotate(90deg);
+    background-color: white;
+}
