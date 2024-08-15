@@ -10,7 +10,7 @@
 .puzzle-piece {
     height: 250px;
     width: 250px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     position: relative;
 }
@@ -53,7 +53,7 @@
 
 .puzzle-circle.right {
     top: 100px;
-    right: 3px;
+    right: 3.5px;
     transform: rotate(90deg);
 
 
@@ -61,7 +61,7 @@
 
 .puzzle-circle.left {
     top: 100px;
-    left: 45px;
+    left: 46.5px;
     transform: rotate(90deg);
     background-color: white;
 
@@ -108,7 +108,7 @@
     }
     100% {
         visibility: visible;
-        left: 300px;
+        left: 299.8px;
     }
 }
 
@@ -140,7 +140,7 @@
     transform:rotate(90deg);
     visibility: hidden;
     z-index: -1;
-    animation: 3s linear 1 7s forwards slide4;
+    animation: 2s linear 1 7s forwards slide4;
 }
 
 @keyframes slide4 {
@@ -164,22 +164,22 @@
     left: 700px;
     transform: rotate(90deg);
     visibility: hidden;
-    animation: 3s linear 1 10s forwards slide5;
+    animation: 3s linear 1 9s forwards slide5;
     z-index: -2;
 }
 
 @keyframes slide5 {
     0% {
         visibility: visible;
-        left: 700px;
+        left: 600px;
     }
     50% {
         visibility: visible;
-        left: 500px;
+        left: 450px;
     }
     100% {
         visibility: visible;
-        left: 300px;
+        left: 299.8px;
     }
 }
 /* top: -1100px
