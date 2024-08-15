@@ -4,7 +4,7 @@
 .testing{
     position: relative;
     width: 100%;
-    height: 40%;
+    height: 600px;
 }
 
 .puzzle-piece {
@@ -34,6 +34,7 @@
     position: absolute;
     background-color: red;
     z-index: 1;
+    
 
 }
 
@@ -44,7 +45,7 @@
 }
 
 .puzzle-circle.bottom {
-    top: 153.22px;
+    top: 153.5px;
     left: 100px;
     background-color: white;
 
@@ -76,16 +77,6 @@
     animation-fill-mode: forwards; */
 }
 
-.puzzle-piece.three{
-    left: 800px;
-    top: -500px;
-    transform: rotate(90deg);
-    z-index: -1;
-    visibility: hidden;
-    animation: 3s linear 1 4s forwards slide3;
-    
-}
-
 @keyframes slide {
     0% {
         left: 400px;
@@ -98,17 +89,98 @@
     }
 }
 
-@keyframes slide3 {
+.puzzle-piece.three{
+    left: 800px;
+    top: -500px;
+    transform: rotate(90deg);
+    z-index: -1;
+    visibility: hidden;
+    animation: 3s linear 1 4s forwards slide2;
+}
+@keyframes slide2 {
     0% {
         visibility: visible;
-        left: 800px;
+        left: 650px;
     }
     50% {
         visibility: visible;
-        left: 750px;
+        left: 475px;
     }
     100% {
         visibility: visible;
         left: 300px;
     }
 }
+
+.puzzle-piece.four{
+    top: -400px;
+    visibility: hidden;
+    animation: 3s linear 1 4s forwards slide3;
+
+}
+
+@keyframes slide3 {
+    0% {
+        visibility: visible;
+        top: -400px;
+    }
+    50% {
+        visibility: visible;
+        top: -500px;
+    }
+    100% {
+        visibility: visible;
+        top: -600px;
+    }
+}
+
+.puzzle-piece.five {
+    top: -650px;
+    left: 150px;
+    transform:rotate(90deg);
+    visibility: hidden;
+    z-index: -1;
+    animation: 3s linear 1 7s forwards slide4;
+}
+
+@keyframes slide4 {
+    0% {
+        visibility: visible;
+        top: -650px;
+    }
+    50% {
+        visibility: visible;
+        top: -750px;
+    }
+    100% {
+        visibility: visible;
+        top: -850px;
+    }
+}
+
+
+.puzzle-piece.six {
+    top: -1100px;
+    left: 700px;
+    transform: rotate(90deg);
+    visibility: hidden;
+    animation: 3s linear 1 10s forwards slide5;
+    z-index: -2;
+}
+
+@keyframes slide5 {
+    0% {
+        visibility: visible;
+        left: 700px;
+    }
+    50% {
+        visibility: visible;
+        left: 500px;
+    }
+    100% {
+        visibility: visible;
+        left: 300px;
+    }
+}
+/* top: -1100px
+left: 300px */
