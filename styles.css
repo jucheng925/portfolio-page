@@ -59,40 +59,40 @@ nav > ul > li {
     content: "➤  "
     } */
     
-nav > ul > li:hover {
-    background-color: #DCD9D1;
-    border-radius: 20px;
-    cursor: pointer;
+    nav > ul > li:hover {
+        background-color: #DCD9D1;
+        border-radius: 20px;
+        cursor: pointer;
         
-}
+    }
     
-li > a {
-    color: var(--text-color);
-    text-decoration: none;
-}
+    li > a {
+        color: var(--text-color);
+        text-decoration: none;
+    }
     
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
     
-.hidden{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: var(--puzzle-color);
-    align-items: center;
-    width: 460px;
-    height: 310px;
+    .hidden{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: var(--puzzle-color);
+        align-items: center;
+        width: 460px;
+        height: 310px;
     top: 26vh;
     z-index: 2;
     opacity: 0;
     animation: 1s ease 1 9s both appear;
 }
-    
+
 
 .hidden h1{
     text-align: center;
@@ -130,7 +130,8 @@ hr{
 .animation {
     padding-top: 22vh;
     width: 550px;
-    height: 500px;   
+    height: 400px;   
+
 }
         
 .puzzle-piece {
