@@ -1,11 +1,20 @@
+:root{
+    --main-bg-color: #c6efec;
+    --puzzle-color: #ffc4b7;
+    --text-color: #102742;
+    --nav-color: #f2f1ee;
+    
+}
+/* color palette, #93dcdf, #c6efec, #f2f1ee, #ffdfd1, #ffc4b7  */
 body{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: var(--main-bg-color);
 }
 
 header {
-    background-color: #f2f1ee;
+    background-color: var(--nav-color);
     width: 100%;
     height: 20vh;
     display: flex;
@@ -57,7 +66,7 @@ nav > ul > li:hover {
 }
       
 li > a {
-    color: inherit;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -71,19 +80,21 @@ li > a {
 .hidden{
     position: absolute;
     display: flex;
-    background-color: blue;
+    background-color: var(--puzzle-color);
     align-items: center;
     width: 460px;
     height: 310px;
     top: 26vh;
     z-index: 2;
-    visibility: hidden;
-    animation: 1s 10s forwards appear;
+    opacity: 0;
+    animation: 1s ease 1 9s both appear;
 }
 
 .hidden h1{
     text-align: center;
+    margin: 0 auto;
     font-style: oblique;
+    color: var(--text-color)
 
 }
         
@@ -105,10 +116,10 @@ li > a {
 .puzzle-square {
     height: 150px;
     width: 150px;
-    border: 1px solid red;
+    border: 1px solid var(--puzzle-color);
     margin: auto;
     z-index: -1;
-    background-color: red
+    background-color: var(--puzzle-color);
 }
         
         
@@ -118,7 +129,7 @@ li > a {
     /* border: 1px solid blue; */
     border-radius: 50% 50% 75% 75%;
     position: absolute;
-    background-color: red;
+    background-color: var(--puzzle-color);
     z-index: 1;
     }
         
@@ -130,7 +141,7 @@ li > a {
 .puzzle-circle.bottom {
     top: 153.5px;
     left: 100px;
-    background-color: white;
+    background-color: var(--main-bg-color);
 }
         
 .puzzle-circle.right {
@@ -143,7 +154,7 @@ li > a {
     top: 100px;
     left: 46.5px;
     transform: rotate(90deg);
-    background-color: white;
+    background-color: var(--main-bg-color);
 }
         
 .puzzle-piece.two{
@@ -263,8 +274,11 @@ li > a {
 }
 
 @keyframes appear {
+    0% {
+        opacity: 0;
+    }
     100% {
-        visibility: visible
+        opacity: 1;
     }
 }
 
