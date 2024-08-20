@@ -3,6 +3,7 @@
     --puzzle-color: #ffc4b7;
     --text-color: #102742;
     --nav-color: #f2f1ee;
+    --second-bg-color: #93dcdf;
     
 }
 /* color palette, #93dcdf, #c6efec, #f2f1ee, #ffdfd1, #ffc4b7  */
@@ -119,7 +120,13 @@ li > a {
     font-size: 2.5em;
     color: var(var(--text-color));
 }
-        
+
+hr{
+    border: 5px var(--second-bg-color);
+    border-top-style: double; 
+    width: 60%;
+}
+
 .animation {
     padding-top: 22vh;
     width: 550px;
