@@ -64,22 +64,24 @@ nav > ul > li:hover {
     cursor: pointer;
         
 }
-      
+    
 li > a {
     color: var(--text-color);
     text-decoration: none;
 }
-
+    
 .flex-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
-
+    
 .hidden{
     position: absolute;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     background-color: var(--puzzle-color);
     align-items: center;
     width: 460px;
@@ -89,15 +91,34 @@ li > a {
     opacity: 0;
     animation: 1s ease 1 9s both appear;
 }
+    
 
 .hidden h1{
     text-align: center;
     margin: 0 auto;
     font-style: oblique;
+    font-size: 2em;
     color: var(--text-color)
+}
+
+#restartButton {
+    background-color: var(--puzzle-color);
+    border: none;
+    padding: 5px 15px;
+}
+
+#restartButton:hover{
+    background-color: #ffdfd1;
+    border-radius: 20px;
+    cursor: pointer;
 
 }
-        
+
+.reload {
+    font-family: Lucida Sans Unicode;
+    font-size: 2.5em;
+    color: var(var(--text-color));
+}
         
 .animation {
     padding-top: 22vh;
