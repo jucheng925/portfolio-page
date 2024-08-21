@@ -340,3 +340,12 @@ hr{
         padding-top: 32vh;
     }
 }
+
+section{
+    width: 75%;
+    font-size: 1.5rem;
+}
+
+.icons img{
+    height: 8vh;
+}
