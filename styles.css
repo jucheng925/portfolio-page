@@ -59,34 +59,35 @@ nav > ul > li {
     content: "➤  "
     } */
     
-    nav > ul > li:hover {
-        background-color: #DCD9D1;
-        border-radius: 20px;
-        cursor: pointer;
+nav > ul > li:hover {
+    background-color: #DCD9D1;
+    border-radius: 20px;
+    cursor: pointer;
         
-    }
+}
     
-    li > a {
-        color: var(--text-color);
-        text-decoration: none;
-    }
+li > a {
+    color: var(--text-color);
+    text-decoration: none;
+    text-shadow: 1px 1px 2px var(--text-color);
+}
     
-    .flex-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
     
-    .hidden{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        background-color: var(--puzzle-color);
-        align-items: center;
-        width: 460px;
-        height: 310px;
+.hidden{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--puzzle-color);
+    align-items: center;
+    width: 460px;
+    height: 310px;
     top: 26vh;
     z-index: 2;
     opacity: 0;
@@ -95,7 +96,7 @@ nav > ul > li {
 
 
 .hidden h1{
-    text-align: center;
+    text-align: justify;
     margin: 0 auto;
     font-style: oblique;
     font-size: 2em;
