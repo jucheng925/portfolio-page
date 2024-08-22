@@ -360,8 +360,14 @@ section h3{
     letter-spacing: 2px;
 }
 
+#resume {
+    text-align: center;
+}
+
 .icons{
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .icons img{
