@@ -1,9 +1,8 @@
 :root{
-    --main-bg-color: #c6efec;
-    --puzzle-color: #ffc4b7;
+    --puzzle-color:#93dcdf;
     --text-color: #102742;
-    --nav-color: #f2f1ee;
-    --second-bg-color: #93dcdf;
+    --bg-color: #f2f1ee;
+    --second-bg-color: #c6efec;
     
 }
 /* color palette, #93dcdf, #c6efec, #f2f1ee, #ffdfd1, #ffc4b7  */
@@ -11,11 +10,11 @@ body{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: var(--main-bg-color);
+    background-color: var(--bg-color);
 }
 
 header {
-    background-color: var(--nav-color);
+    background-color: var(--bg-color);
     width: 100%;
     height: 20vh;
     display: flex;
@@ -24,6 +23,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 3;
+    border-bottom: 5px solid var(--second-bg-color);
 }
 
 
@@ -69,6 +69,7 @@ nav > ul > li:hover {
 li > a {
     color: var(--text-color);
     text-decoration: none;
+    text-shadow: 1px 1px 2px var(--text-color);
 }
     
 .flex-container {
@@ -92,10 +93,10 @@ li > a {
     opacity: 0;
     animation: 1s ease 1 9s both appear;
 }
-    
+
 
 .hidden h1{
-    text-align: center;
+    text-align: justify;
     margin: 0 auto;
     font-style: oblique;
     font-size: 2em;
@@ -109,7 +110,7 @@ li > a {
 }
 
 #restartButton:hover{
-    background-color: #ffdfd1;
+    background-color: var(--second-bg-color);
     border-radius: 20px;
     cursor: pointer;
 
@@ -122,7 +123,7 @@ li > a {
 }
 
 hr{
-    border: 5px var(--second-bg-color);
+    border: 10px var(--second-bg-color);
     border-top-style: double; 
     width: 60%;
 }
@@ -130,7 +131,8 @@ hr{
 .animation {
     padding-top: 22vh;
     width: 550px;
-    height: 500px;   
+    height: 400px;   
+
 }
         
 .puzzle-piece {
@@ -169,7 +171,7 @@ hr{
 .puzzle-circle.bottom {
     top: 153.5px;
     left: 100px;
-    background-color: var(--main-bg-color);
+    background-color: var(--bg-color);
 }
         
 .puzzle-circle.right {
@@ -182,7 +184,7 @@ hr{
     top: 100px;
     left: 46.5px;
     transform: rotate(90deg);
-    background-color: var(--main-bg-color);
+    background-color: var(--bg-color);
 }
         
 .puzzle-piece.two{
@@ -338,4 +340,36 @@ hr{
     .animation {
         padding-top: 32vh;
     }
+}
+
+section{
+    width: 75%;
+    font-size: 1.5rem;
+}
+
+section h3{
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1.5px 1.5px 2px var(--text-color);
+    
+}
+
+#about-me p{
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+#resume {
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icons img{
+    height: 8vh;
 }
