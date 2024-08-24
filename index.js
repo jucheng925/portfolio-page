@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", ()=> {
 // restartButton.addEventListener("click", restartAnimation, false);
 
 function restartAnimation(e) {
-    console.log(e);
     let hidden = document.querySelector(".hidden");
     let puzzlePieces = document.querySelectorAll(".puzzle-piece")
     puzzlePieces.forEach((puzzlePiece) => {
@@ -22,3 +21,4 @@ function restartAnimation(e) {
     })
 
 }
+
