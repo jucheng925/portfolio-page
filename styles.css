@@ -96,7 +96,7 @@ li > a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: var(--puzzle-color);
+    background-color: transparent;
     align-items: center;
     width: 460px;
     height: 310px;
@@ -111,7 +111,7 @@ li > a {
     text-align: justify;
     margin: 0 auto;
     font-style: oblique;
-    font-size: 2em;
+    font-size: 1.5rem;
     color: var(--text-color)
 }
 
