@@ -96,10 +96,10 @@ li > a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: transparent;
+    background-color: var(--puzzle-color);
     align-items: center;
-    width: 460px;
-    height: 310px;
+    width: 452px;
+    height: 312px;
     top: 26vh;
     z-index: 2;
     opacity: 0;
@@ -407,6 +407,7 @@ section h3 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 5px;
 }
 
 .icons img {
@@ -469,7 +470,7 @@ footer {
     }
 
     .hidden {
-        top: 38vh;
+        top: 36.5vh;
     }
     .animation {
         padding-top: 32vh;
