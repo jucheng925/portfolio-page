@@ -483,6 +483,9 @@ footer {
     a.anchor {
         top: -32vh;
     }
+    .icons{
+        justify-content: center;
+    }
     .project:nth-child(odd){
         flex-direction: column-reverse;
     }
