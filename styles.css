@@ -405,7 +405,7 @@ section h3 {
 
 .icons{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-top: 5px;
 }
@@ -422,6 +422,10 @@ section h3 {
     height: 60px;
     object-fit:scale-down;
     padding: 0 20px 5px;
+}
+
+.center {
+    justify-content: center;
 }
 
 
