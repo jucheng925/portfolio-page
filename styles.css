@@ -455,6 +455,7 @@ footer {
     
 }
 
+/* for tablet sizing */
 @media screen and (max-width: 750px) {
     body{
         font-size: 2vw;
@@ -499,3 +500,6 @@ footer {
     }
 
 }
+
+
+/* for mobile sizing (320-480px) */
